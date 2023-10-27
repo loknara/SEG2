@@ -13,7 +13,7 @@ function HomePage() {
             <p>Currensee is an interactive currency tracker with live updates!</p>
           </div>
           <div className="buttons">
-            <button>Feedback Page</button>
+            <button>Login/Sign-Up</button>
             <button>Quick Currency</button>
           </div>
         </div>
