@@ -9,6 +9,8 @@ import Signup from './components/Signup.jsx';
 // import Page3 from './components/Page3';
 import HeatMap from './components/HeatMap';
 // import Page4 from './components/Page4';
+import Contact from './components/Contact';
+
 
 function App() {
   return (
@@ -20,6 +22,7 @@ function App() {
         <Route path="/ResourcesPage/FinancialNews" element={<FinancialNews/>} />
         <Route path="/Login" element={<Login />} />
         <Route path="/Signup" element={<Signup />} />
+        <Route path="/Contact" element={<Contact/>} />
        {/*  <Route path="/page3" component={Page3} />
         <Route path="/page4" component={Page4} /> */}
         <Route path="/HeatMap" element={<HeatMap/>} />
