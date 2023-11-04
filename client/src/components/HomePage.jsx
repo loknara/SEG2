@@ -1,9 +1,16 @@
 // Example for HomePage.js
 import React from 'react';
-import './HomePage.css'
+import './HomePage.css';
+import { useNavigate } from 'react-router-dom';
 
 function HomePage() {
-    return (
+  const navigate = useNavigate();
+
+  const navigateToLogin = () => {
+    console.log('Login button clicked');
+    navigate('/Login');
+};  
+  return (
         <div className="currensee-container">
           <div className="header">
             <h1>CURRENSEE</h1>
@@ -13,7 +20,7 @@ function HomePage() {
             <p>Currensee is an interactive currency tracker with live updates!</p>
           </div>
           <div className="buttons">
-            <button>Login/Sign-Up</button>
+            <button onClick={navigateToLogin}>Login/Signup</button>
             <button>Quick Currency</button>
           </div>
         </div>
