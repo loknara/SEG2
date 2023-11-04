@@ -7,6 +7,7 @@ import FinancialNews from './components/FinancialNews.jsx';
 import Login from './components/Login.jsx'
 import Signup from './components/Signup.jsx';
 // import Page3 from './components/Page3';
+import HeatMap from './components/HeatMap';
 // import Page4 from './components/Page4';
 
 function App() {
@@ -21,6 +22,8 @@ function App() {
         <Route path="/Signup" element={<Signup />} />
        {/*  <Route path="/page3" component={Page3} />
         <Route path="/page4" component={Page4} /> */}
+        <Route path="/HeatMap" element={<HeatMap/>} />
+        {/* <Route path="/page4" component={Page4} />  */}
         </Routes>
     </Router>
   );
