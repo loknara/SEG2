@@ -1,4 +1,4 @@
-// Example for HomePage.js
+// Created by Lokesh Narasani
 import React from 'react';
 import './HomePage.css';
 import { Link } from 'react-router-dom';
