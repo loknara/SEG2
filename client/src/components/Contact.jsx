@@ -1,3 +1,7 @@
+/*
+Contact.jsx
+Created by Suraj Namburi
+*/
 import React from "react";
 import LogoLeft from "./Logo.png";
 import './Contact.css';
