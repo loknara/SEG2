@@ -4,8 +4,10 @@ import Navbar from './components/NavBar';
 import HomePage from './components/HomePage';
 import ResourcesPage from './components/ResourcesPage';
 import FinancialNews from './components/FinancialNews.jsx';
+import SavedCurrencyConversions from './components/SavedCurrencyConversions';
 import Login from './components/Login.jsx'
 import Signup from './components/Signup.jsx';
+
 // import Page3 from './components/Page3';
 import HeatMap from './components/HeatMap';
 // import Page4 from './components/Page4';
@@ -19,6 +21,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<HomePage/>} />
         <Route path="/ResourcesPage" element={<ResourcesPage/>} />
+        <Route path="/SavedCurrencyConversions" element={<SavedCurrencyConversions/>} />
         <Route path="/ResourcesPage/FinancialNews" element={<FinancialNews/>} />
         <Route path="/Login" element={<Login />} />
         <Route path="/Signup" element={<Signup />} />
