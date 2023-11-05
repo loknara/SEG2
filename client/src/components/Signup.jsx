@@ -24,7 +24,7 @@ export default function Signup(){
             return {
                 ...prevFormData,
                 [name] : value,
-                matched:  (formData.password == formData.retype)
+                matched:  (formData.password === formData.retype)
             }
         })
         console.log(formData.matched)
