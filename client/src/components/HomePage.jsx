@@ -1,9 +1,17 @@
-// Example for HomePage.js
+// Created by Lokesh Narasani
 import React from 'react';
-import './HomePage.css'
+import './HomePage.css';
+import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 function HomePage() {
-    return (
+  const navigate = useNavigate();
+
+  const navigateToLogin = () => {
+    console.log('Login button clicked');
+    navigate('/Login');
+};  
+  return (
         <div className="currensee-container">
           <div className="header">
             <h1>CURRENSEE</h1>
@@ -13,8 +21,8 @@ function HomePage() {
             <p>Currensee is an interactive currency tracker with live updates!</p>
           </div>
           <div className="buttons">
-            <button>Login/Sign-Up</button>
-            <button>Quick Currency</button>
+            <button onClick={navigateToLogin}>Login/Signup</button>
+            <button><Link to="https://www.oanda.com/currency-converter/en/?from=USD&to=EUR&amount=1">Quick Currency Convertor</Link></button>
           </div>
         </div>
       );

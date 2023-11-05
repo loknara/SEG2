@@ -8,6 +8,8 @@ function Navbar() {
       <Link to="/">Home</Link>
       <Link to="/ResourcesPage">ResourcesPage</Link>
       <Link to="/SavedCurrencyConversions">Saved Conversions</Link>
+
+      <Link to="/Contact">Contact Us</Link> //Created by Suraj N.
       {/* <Link to="/page2">Page 2</Link>
       <Link to="/page3">Page 3</Link>
       <Link to="/page4">Page 4</Link> */}
