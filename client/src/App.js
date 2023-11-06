@@ -4,6 +4,7 @@ import Navbar from './components/NavBar';
 import HomePage from './components/HomePage';
 import ResourcesPage from './components/ResourcesPage';
 import CurrencyHistory from './components/CurrencyHistory';
+import Profile from './components/Profile';
 import FinancialNews from './components/FinancialNews.jsx';
 import SavedCurrencyConversions from './components/SavedCurrencyConversions';
 import Login from './components/Login.jsx'
@@ -25,6 +26,7 @@ function App() {
         <Route path="/SavedCurrencyConversions" element={<SavedCurrencyConversions/>} />
         <Route path="/ResourcesPage/FinancialNews" element={<FinancialNews/>} />
         <Route path="/CurrencyHistory" element={<CurrencyHistory/>} />
+        <Route path="/Profile" element={<Profile/>} />
         <Route path="/Login" element={<Login />} />
         <Route path="/Signup" element={<Signup />} />
         <Route path="/Contact" element={<Contact/>} /> //Created by Suraj N.
