@@ -1,0 +1,77 @@
+
+/*Created by Arjun Prabhune*/
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    height: 100vh;
+}
+
+.box {
+    flex: 1;
+    background-color: white;
+    border-radius: 2rem;
+    margin: 100px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 24px;
+
+}
+
+.currensee-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+  }
+
+.welcome-section {
+    background-color: #4CAF50;
+    padding: 20px;
+    width: 80%;
+    margin-top: 50px;
+    text-align: center;
+    border-radius: 8px;
+  }
+
+  .header {
+    background-color: #333;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  .header h1 {
+    color: white;
+    margin: 0;
+    font-size: 1.5em;
+  }
+
+  .buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+  }
+
+  .contact .leftSide {
+    height: 100%;
+    flex: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+  }
+
+  img {
+    width: 100%; /* Makes the image responsive */
+    max-width: 400px; /* Sets a maximum width for the image */
+    height: auto; /* Maintains the aspect ratio */
+    display: block; /* Optional: Display block to remove bottom margin/whitespace */
+    margin: 0 auto; /* Optional: Centers the image if it is not full width */
+    padding-top: 30px;
+}
