@@ -8,11 +8,13 @@ import Login from './components/Login.jsx'
 import Signup from './components/Signup.jsx';
 // import Page3 from './components/Page3';
 import HeatMap from './components/HeatMap';
+import { AuthProvider } from './contexts/AuthContext.js';
 // import Page4 from './components/Page4';
 
 function App() {
   return (
-    <Router>
+    <AuthProvider>
+      <Router>
       <Navbar />
       <Routes>
         <Route exact path="/" element={<HomePage/>} />
@@ -24,8 +26,9 @@ function App() {
         <Route path="/page4" component={Page4} /> */}
         <Route path="/HeatMap" element={<HeatMap/>} />
         {/* <Route path="/page4" component={Page4} />  */}
-        </Routes>
-    </Router>
+      </Routes>
+      </Router>
+    </AuthProvider>
   );
 }
 
