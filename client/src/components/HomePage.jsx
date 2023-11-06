@@ -1,6 +1,7 @@
-// Example for HomePage.js
+// Created by Lokesh Narasani
 import React from 'react';
 import './HomePage.css';
+import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 
 function HomePage() {
@@ -21,7 +22,7 @@ function HomePage() {
           </div>
           <div className="buttons">
             <button onClick={navigateToLogin}>Login/Signup</button>
-            <button>Quick Currency</button>
+            <button><Link to="https://www.oanda.com/currency-converter/en/?from=USD&to=EUR&amount=1">Quick Currency Convertor</Link></button>
           </div>
         </div>
       );
