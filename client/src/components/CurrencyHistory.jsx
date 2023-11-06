@@ -12,8 +12,8 @@ import './CurrencyHistory.css';
             <h1>CURRENCY HISTORY</h1>
           </div>
          
-            <div>
-            <img src= "./images/Chart.jpeg" />
+          <div>
+            <img src= "https://www.poundsterlinglive.com/images/2022/H2/EURUSD_2022-11-14_14-12-53.png" alt="Chart"/>
             </div>
           
           

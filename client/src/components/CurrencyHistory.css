@@ -63,3 +63,12 @@
     background-repeat: no-repeat;
     background-size: 70%;
   }
+
+  img {
+    width: 100%; /* Makes the image responsive */
+    max-width: 400px; /* Sets a maximum width for the image */
+    height: auto; /* Maintains the aspect ratio */
+    display: block; /* Optional: Display block to remove bottom margin/whitespace */
+    margin: 0 auto; /* Optional: Centers the image if it is not full width */
+    padding-top: 30px;
+}
