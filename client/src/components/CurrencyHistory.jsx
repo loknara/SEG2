@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './CurrencyHistory.css';
 //import USToEuroChart from "./Chart.png";
+// Created by Arjun Prabhune
 
 
 
@@ -18,8 +19,8 @@ import './CurrencyHistory.css';
           
           
             <div style={{ display: 'flex'}} className="buttons">
-            <button style={{ marginleft: "auto" }}>US</button>
             <button style={{ marginleft: "auto" }}>Euro</button>
+            <button style={{ marginleft: "auto" }}>US</button>
             <button style={{ marginleft: "auto" }}>Weekly</button>
           </div>
 
