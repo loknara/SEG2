@@ -6,6 +6,7 @@ function Navbar() {
   return (
     <nav>
       <Link to="/">Home</Link>
+      <Link to="/Profile">Profile</Link>
       <Link to="/ResourcesPage">ResourcesPage</Link>
       <Link to="/SavedCurrencyConversions">Saved Conversions</Link>
 
