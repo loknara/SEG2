@@ -1,3 +1,8 @@
+//Page was created by sid
+//Successfully signs up user into firebase, currently API is not connected due to security provisions
+//Does user verification and handles other errors
+
+
 import React from 'react';
 import './Signup.css';
 import {useState} from 'react';
@@ -5,7 +10,8 @@ import { Link } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext'
 
 export default function Signup(){
-    const { signup } = useAuth()
+    const { signup } = useAuth() //Function used to sign users
+    //State Objects which constantly tracks users data to submit with sign up is clicked
     const [formData , setFormData] = useState(
         {
             userName:"",
@@ -15,8 +21,8 @@ export default function Signup(){
         }
     )
     const [error, setError] = useState('')
-    const [loading, setLoading] = useState(false)
-    
+    const [loading, setLoading] = useState(false) //Makes sure that button cannot be clicked when signup is in processed
+    //Does user info verification and signs user up
     async function handleSubmit(e){
         e.preventDefault()
 
@@ -34,7 +40,7 @@ export default function Signup(){
         setLoading(false)
 
     }
-
+    //Tracks form data
     function handleChange(event){
         console.log(formData)
         const {name , value} = event.target
