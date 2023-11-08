@@ -2,6 +2,7 @@
 
 import React from 'react';
 import './Profile.css';
+import { Link } from 'react-router-dom';
 
   function Profile() {
     return (
@@ -24,7 +25,9 @@ import './Profile.css';
             </div>
 
             <div className="button-container">
-              <button className="edit-button" onClick={() => handleEditAccountClick()}>Edit Account Details</button>
+              <Link to="/Profile/EditAccount"> 
+                <button className="edit-button">Edit Account Details</button>
+              </Link>
               <button className="advanced-button" onClick={() => handleAdvancedSettingsClick()}>Advanced Settings</button>
             </div>
 
@@ -34,9 +37,6 @@ import './Profile.css';
       );
     }
 
-    function handleEditAccountClick() {
-      // Navigate to the edit account details page
-    }
     
     function handleAdvancedSettingsClick() {
       // Navigate to the advanced settings page

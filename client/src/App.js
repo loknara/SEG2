@@ -5,6 +5,7 @@ import HomePage from './components/HomePage';
 import ResourcesPage from './components/ResourcesPage';
 import CurrencyHistory from './components/CurrencyHistory';
 import Profile from './components/Profile';
+import EditAccount from './components/EditAccount';
 import FinancialNews from './components/FinancialNews.jsx';
 import SavedCurrencyConversions from './components/SavedCurrencyConversions';
 import Login from './components/Login.jsx'
@@ -29,6 +30,7 @@ function App() {
         <Route path="/ResourcesPage/FinancialNews" element={<FinancialNews/>} />
         <Route path="/CurrencyHistory" element={<CurrencyHistory/>} />
         <Route path="/Profile" element={<Profile/>} />
+        <Route path="/Profile/EditAccount" element={<EditAccount/>} />
         <Route path="/Login" element={<Login />} />
         <Route path="/Signup" element={<Signup />} />
         <Route path="/Contact" element={<Contact/>} /> //Created by Suraj N.
