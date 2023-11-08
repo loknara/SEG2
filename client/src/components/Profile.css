@@ -1,3 +1,5 @@
+/* Created by Anish Dasti */
+
 .currensee-container {
     display: flex;
     flex-direction: column;
@@ -5,7 +7,7 @@
     height: 100vh;
     background-color: #333; 
     background-size: cover;
-  }
+}
   
   .header {
     background-color: #333;
@@ -63,4 +65,54 @@
   
   .settings-options div {
     margin-bottom: 5px;
+  }
+
+
+  .profile-details {
+    background-color: #f2f2f2;
+    border: 1px solid #d3d3d3;
+    padding: 70px;
+    margin: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 380px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  .detail {
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
+  
+  .detail strong {
+    font-weight: bold;
+  }
+  
+  .detail:last-child {
+    margin-bottom: 0;
+  }
+  
+  .button-container {
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .edit-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .advanced-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
   }
