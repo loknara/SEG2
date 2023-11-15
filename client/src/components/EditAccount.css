@@ -1,6 +1,6 @@
 /* Created by Anish Dasti */
 
-  .header {
+/*  .header {
     background-color: #333;
     width: 100%;
     padding: 10px 0;
@@ -11,4 +11,59 @@
     color: white;
     margin: 0;
     font-size: 1.5em;
-  }
+  }*/
+
+  /* EditAccount.css */
+
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.edit-profile-details {
+  background-color: #f2f2f2;
+  border: 1px solid #d3d3d3;
+  padding: 70px;
+  margin: 20px;
+  border-radius: 5px;
+  text-align: center;
+  width: 380px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.edit-detail {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.button-container {
+  text-align: center;
+}
+
+.save-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.save-button:hover {
+  background-color: #45a049;
+}
