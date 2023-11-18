@@ -3,7 +3,7 @@
 //Test Case: Allows the user to login through fire base or displays error if error occurs
 
 
-// This login currently works, use Email:Test@gmail.com  password: Password to test this information
+// This login currently works, use Email:Test@gmail.com  password: "Password"    to test this information
 import React from 'react';
 import './Login.css';
 import {useState,  useContext} from 'react';

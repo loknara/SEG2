@@ -8,6 +8,7 @@ import './Signup.css';
 import {useState} from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext'
+import { createUserWithEmailAndPassword } from 'firebase/auth';
 
 export default function Signup(){
     const { signup } = useAuth() //Function used to sign users
@@ -29,14 +30,14 @@ export default function Signup(){
         if(formData.password !== formData.retype){
             return setError("Passwords do not match")
         }
-        try{
-            setError('')
-            setLoading(true)
-            console.log("Signing up")
-            await signup(formData.userName, formData.password)
-        } catch {
-            setError('Failed to create an account')
-        }
+        createUserWithEmailAndPassword(formData.userName, formData.password)
+            .then((userCredential) => {
+                console.log(userCredential)
+            })
+            .catch((error) => {
+                console.log(error)
+                setError(error)
+            })
         setLoading(false)
 
     }
@@ -64,6 +65,7 @@ export default function Signup(){
                 <div className='logo'> Logo goes here</div>
             </div>
             <div className='signupForm'>
+                {error}
                 <label htmlFor="username">Email:</label>
                 <input type='text'placeholder='Username' name='userName' value={formData.userName} onChange={handleChange}></input>
                 <label htmlFor="password">Password:</label>
