@@ -1,5 +1,5 @@
 /* Created by Anish Dasti */
-
+/*
 .currensee-container {
     display: flex;
     flex-direction: column;
@@ -35,6 +35,7 @@
     text-align: center;
     width: 380px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
     position: relative;
   }
   
@@ -52,7 +53,7 @@
   }
   
   .button-container {
-    position: absolute;
+    position: center;
     bottom: 10px;
     display: flex;
     justify-content: space-between;
@@ -74,3 +75,85 @@
     padding: 10px 20px;
     cursor: pointer;
   }
+*/
+
+/* EditAccount.css */
+.currensee-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-size: cover;
+}
+
+.header {
+  background-color: #333;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.header h1 {
+  color: white;
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.profile-details {
+  background-color: #f2f2f2;
+  border: 1px solid #d3d3d3;
+  padding: 70px;
+  margin: 20px;
+  border-radius: 5px;
+  text-align: center;
+  width: 380px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+}
+
+.detail {
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.detail strong {
+  font-weight: bold;
+}
+
+.detail:last-child {
+  margin-bottom: 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.button-container {
+  position: relative;
+  margin-top: 10px; /* Adjusted margin for spacing between details and buttons */
+}
+
+.edit-button,
+.advanced-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 14px 22px;
+  margin: 0 50px; /* Adjusted margin between buttons */
+  cursor: pointer;
+}
+
+.edit-button:hover,
+.advanced-button:hover {
+  background-color: #0056b3;
+}
