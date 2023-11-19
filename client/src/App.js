@@ -16,6 +16,7 @@ import HeatMap from './components/HeatMap';
 import { AuthProvider } from './contexts/AuthContext.js';
 // import Page4 from './components/Page4';
 import Contact from './components/Contact'; //Created by Suraj N.
+import ViewMoreSaved from './components/ViewMoreSaved';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
         <Route exact path="/" element={<HomePage/>} />
         <Route path="/ResourcesPage" element={<ResourcesPage/>} />
         <Route path="/SavedCurrencyConversions" element={<SavedCurrencyConversions/>} />
+        <Route path="/ViewMoreSaved" element={<ViewMoreSaved />} />
         <Route path="/ResourcesPage/FinancialNews" element={<FinancialNews/>} />
         <Route path="/CurrencyHistory" element={<CurrencyHistory/>} />
         <Route path="/Profile" element={<Profile/>} />
