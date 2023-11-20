@@ -21,7 +21,7 @@ export default function Login(){
             //Object which keeps track of the username and password
             userName:"",
             password:""
-        }
+        } 
     );
     const {dispatch} = useContext(AuthContext)// Code for later use
     const navitage = useNavigate()

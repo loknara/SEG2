@@ -16,8 +16,8 @@ import './EditAccount.css';
     }*/
 
     function EditAccount() {
-      const [email, setEmail] = useState('exampleemail@gmail.com');
-      const [username, setUsername] = useState('exampleusername');
+      const [email, setEmail] = useState('test2@gmail.com');
+      const [username, setUsername] = useState('test2@gmail.com');
       const [password, setPassword] = useState('xxxxxxxx');
     
       const handleSaveChanges = () => {
