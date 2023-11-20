@@ -1,16 +1,18 @@
 /* Created by Lokesh Narasani */
+//Firebase authentication code and Setup by Sid(Needed for checking if user is signed in for conditional rendering)
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './NavBar.css';
 import {useState, useEffect} from 'react';
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "../firebase";
-//links set by Lokesh, Firebase authentication set by Sid.
 
 function Navbar() {
   //Adding user to check if currenseee should allow to let the user sign out or not
   const [user, setUser] = useState(null);
+  //This contains the information about current user signed in
   useEffect(() => {
+    //Checks for any changes in the current signed in user, sets to null if user is signed out
     const unsubscribe = onAuthStateChanged(auth, (authUser) => {
         if (authUser) {
           // User is signed in.
