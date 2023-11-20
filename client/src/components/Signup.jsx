@@ -9,6 +9,8 @@ import {useState} from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext'
 import { createUserWithEmailAndPassword } from 'firebase/auth';
+import { auth } from "../firebase";
+
 
 export default function Signup(){
     const { signup } = useAuth() //Function used to sign users
@@ -30,14 +32,15 @@ export default function Signup(){
         if(formData.password !== formData.retype){
             return setError("Passwords do not match")
         }
-        createUserWithEmailAndPassword(formData.userName, formData.password)
-            .then((userCredential) => {
-                console.log(userCredential)
-            })
-            .catch((error) => {
-                console.log(error)
-                setError(error)
-            })
+        try {
+            setLoading(true);
+            const userCredential = await createUserWithEmailAndPassword(auth, formData.userName, formData.password);
+            console.log(userCredential);
+        } catch (error) {
+            console.error(error);
+            setError(error.message);
+        }
+
         setLoading(false)
 
     }
@@ -56,6 +59,7 @@ export default function Signup(){
             }
         })
         console.log(formData.matched)
+        console.log('Updated formData:', formData);
     }
 
 
