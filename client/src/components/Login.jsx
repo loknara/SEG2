@@ -6,16 +6,18 @@
 // This login currently works, use Email:Test@gmail.com  password: "Password"    to test this information
 import React from 'react';
 import './Login.css';
-import {useState,  useContext} from 'react';
+import {useState,  useContext, useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
 import {AuthContext} from "../contexts/AuthContext"
-import { signInWithEmailAndPassword } from "firebase/auth";
+import { signInWithEmailAndPassword, onAuthStateChanged } from "firebase/auth";
 import { auth } from "../firebase";
+
 
 export default function Login(){
     //Setting constants and states to use throughout the page
     const [error, setError] = useState(false);
+    const [user, setUser] = useState(null);
     const [formData , setFormData] = useState( 
         {
             //Object which keeps track of the username and password
@@ -25,6 +27,21 @@ export default function Login(){
     );
     const {dispatch} = useContext(AuthContext)// Code for later use
     const navitage = useNavigate()
+
+    useEffect(() => {
+        const unsubscribe = onAuthStateChanged(auth, (authUser) => {
+            if (authUser) {
+              // User is signed in.
+              setUser(authUser);
+            } else {
+              // User is signed out.
+              setUser(null);
+            }
+          });
+    
+        // Clean up the listener when the component unmounts
+        return () => unsubscribe();
+      }, []);
 
     function handleChange(event){
         console.log(formData)
@@ -62,6 +79,8 @@ export default function Login(){
             <div className='header'>
                 <div className='logo'> Logo goes here</div>
             </div>
+            {user? "Logged in" : "Logged out"}
+            {console.log(user)}
             <div className='loginForm'>
                 <label htmlFor="username">Email:</label>
                 <input type='text'placeholder='Email' name='userName' value={formData.userName} onChange={handleChange}></input>

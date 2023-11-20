@@ -3,8 +3,27 @@ import React from 'react';
 import './HomePage.css';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
+import {useState, useEffect} from 'react';
+import { onAuthStateChanged } from "firebase/auth";
+import { auth } from "../firebase";
 
 function HomePage() {
+  const [user, setUser] = useState(null);
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (authUser) => {
+        if (authUser) {
+          // User is signed in.
+          setUser(authUser);
+        } else {
+          // User is signed out.
+          setUser(null);
+        }
+      });
+
+    // Clean up the listener when the component unmounts
+    return () => unsubscribe();
+  }, []);
+
   const navigate = useNavigate();
 
   const navigateToLogin = () => {
@@ -21,7 +40,7 @@ function HomePage() {
             <p>Currensee is an interactive currency tracker with live updates!</p>
           </div>
           <div className="buttons">
-            <button onClick={navigateToLogin}>Login/Signup</button>
+            {!user && <button onClick={navigateToLogin}>Login/Signup</button>}
             <button><Link to="https://www.oanda.com/currency-converter/en/?from=USD&to=EUR&amount=1">Quick Currency Convertor</Link></button>
           </div>
         </div>

@@ -13,7 +13,6 @@ import { auth } from "../firebase";
 
 
 export default function Signup(){
-    const { signup } = useAuth() //Function used to sign users
     //State Objects which constantly tracks users data to submit with sign up is clicked
     const [formData , setFormData] = useState(
         {
