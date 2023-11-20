@@ -4,9 +4,10 @@ import './NavBar.css';
 import {useState, useEffect} from 'react';
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "../firebase";
-
+//links set by Lokesh, Firebase authentication set by Sid.
 
 function Navbar() {
+  //Adding user to check if currenseee should allow to let the user sign out or not
   const [user, setUser] = useState(null);
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (authUser) => {

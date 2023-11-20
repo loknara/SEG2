@@ -10,10 +10,13 @@ import { Link } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext'
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { auth } from "../firebase";
+import { useNavigate } from "react-router-dom";
+
 
 
 export default function Signup(){
     //State Objects which constantly tracks users data to submit with sign up is clicked
+    const Navigate= useNavigate()
     const [formData , setFormData] = useState(
         {
             userName:"",
@@ -27,14 +30,18 @@ export default function Signup(){
     //Does user info verification and signs user up
     async function handleSubmit(e){
         e.preventDefault()
-
+        
         if(formData.password !== formData.retype){
             return setError("Passwords do not match")
         }
         try {
+            //Tries the Request by creating a new account in firebase
             setLoading(true);
+            console.log("Button clicked, Request sent: " + loading)
             const userCredential = await createUserWithEmailAndPassword(auth, formData.userName, formData.password);
             console.log(userCredential);
+            Navigate('/')
+            
         } catch (error) {
             console.error(error);
             setError(error.message);
