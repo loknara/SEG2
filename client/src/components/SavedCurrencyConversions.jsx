@@ -6,6 +6,15 @@ import './SavedCurrencyConversions.css';
 
 
   function SavedCurrencyConversions() {
+
+    const navigate = useNavigate();
+
+    const navigateToSaved = () => {
+      console.log('Saved button clicked');
+      navigate('/ViewMoreSaved');
+  }; 
+
+
     return (
         <div className="currensee-container">
           <div className="header">
@@ -43,7 +52,7 @@ import './SavedCurrencyConversions.css';
           
 
             <div className="buttons">
-            <button>View More Saved</button>
+            <button onClick={navigateToSaved}>View More Saved</button>
           </div>
 
 
