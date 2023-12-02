@@ -77,9 +77,9 @@ export default function Login(){
     return(
         <div className='loginBody'>
             <div className='header'>
-                <div className='logo'> Logo goes here</div>
+                <h1 >CURRENSEE</h1>
             </div>
-            {user? "Logged in" : "Logged out"}
+            {/* {user? "Logged in" : "Logged out"} */}
             {console.log(user)}
             <div className='loginForm'>
                 <label htmlFor="username">Email:</label>
@@ -87,7 +87,7 @@ export default function Login(){
                 <label htmlFor="password">Password:</label>
                 <input type='password' placeholder='Password' name='password' value = {formData.password} onChange={handleChange}></input>
                 <div className='buttons'>
-                    <button className='button' onClick={handleLogin}>Login</button>
+                    <button className='loginButton' onClick={handleLogin}>Login</button>
                 </div>
                 {error && <span>Wrong email or password!</span>}
                 <div className='centerText'>Need an account? <Link to="/Signup">Sign Up</Link></div>

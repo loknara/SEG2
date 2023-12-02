@@ -18,12 +18,7 @@ import { useAuth } from '../contexts/AuthContext';
     const { currentUser } = useAuth();
 
     return (
-        <div className="currensee-container">
-            <div className="header">
-                <h1>PROFILE</h1>
-            </div>
-
-            
+        <div className="currensee-container">   
             <div className="profile-details">
               <div className="detail">
                 <strong>Email:</strong> {currentUser ? currentUser.email : ""}
@@ -36,11 +31,11 @@ import { useAuth } from '../contexts/AuthContext';
               </div>
             </div>
 
-            <div className="button-container">
+            <div className="buttons">
               <Link to="/Profile/EditAccount"> 
-                <button className="edit-button">Edit Account Details</button>
+                <button className="editButton">Edit Account Details</button>
               </Link>
-              <button className="advanced-button" onClick={() => handleAdvancedSettingsClick()}>Advanced Settings</button>
+              <button className="editButton" onClick={() => handleAdvancedSettingsClick()}>Advanced Settings</button>
             </div>
 
 

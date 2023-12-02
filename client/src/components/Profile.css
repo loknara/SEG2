@@ -1,6 +1,6 @@
 /* Created by Anish Dasti */
 
-.header {
+/* .header {
   background-color: #333;
   width: 100%;
   padding: 10px 0;
@@ -54,7 +54,7 @@ input {
 
 .button-container {
   position: relative;
-  margin-top: 10px; /* Adjusted margin for spacing between details and buttons */
+  margin-top: 10px; 
 }
 
 .edit-button,
@@ -63,11 +63,101 @@ input {
   color: #fff;
   border: none;
   padding: 14px 22px;
-  margin: 0 50px; /* Adjusted margin between buttons */
+  margin: 0 50px; 
   cursor: pointer;
 }
 
 .edit-button:hover,
 .advanced-button:hover {
-  background-color: #0056b3;
+  background-color: #0056b3; 
+}*/
+
+/* Updated by Anish Dasti */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Lato:wght@300;400;700;900&family=Nunito:wght@500;600;700&display=swap');
+
+.header {
+  background-color: #117730; /* Updated color for consistency */
+  width: 100%;
+  padding: 15px 0; /* Increased padding for better spacing */
+  text-align: center;
+  font-family: 'Lato', sans-serif; /* Modern font */
 }
+
+.header h1 {
+  color: #ecf0f1; /* Lighter color for better contrast */
+  margin: 0;
+  font-size: 2em; /* Larger font size for emphasis */
+}
+
+.profile-details {
+  background-color: #ffffff; /* Lighter background for a cleaner look */
+  border: none; /* Removing border for a sleek look */
+  padding: 40px;
+  margin: 20px auto; /* Centering the box */
+  border-radius: 10px; /* More pronounced rounded corners */
+  text-align: center;
+  width: 400px; /* Slightly wider */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  font-family: 'Nunito', sans-serif; /* Consistent font */
+}
+
+.detail {
+  margin-bottom: 15px; /* Increased spacing */
+  font-size: 20px; /* Adjusted font size for better readability */
+  color: #333; /* Darker text for contrast */
+}
+
+.detail strong {
+  font-weight: bold;
+}
+
+.detail:last-child {
+  margin-bottom: 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px; /* Increased spacing */
+  color: #333; /* Consistent text color */
+}
+
+input {
+  width: 100%;
+  padding: 10px; /* Increased padding for a better feel */
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px; /* Added margin-bottom for spacing */
+}
+
+.buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; /* Wrap buttons for responsiveness */
+  justify-content: center; /* Center buttons */
+}
+
+.editButton {
+  padding: 15px 30px;
+  background-color: rgb(24, 146, 83);; /* Modern button color */
+  border: none;
+  border-radius: 20px; /* More rounded buttons */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+  color: white; /* Light text color */
+  font-size: 1em;
+  font-family: 'Inter', sans-serif; /* Use a different font for buttons */
+}
+
+.buttons button:hover {
+  background-color: #2980b9; /* Darken button on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+.edit-button:hover,
+.advanced-button:hover {
+  background-color: #2980b9; /* Darker shade on hover */
+}
+

@@ -1,10 +1,12 @@
 /* Created by Lokesh Narasani */
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Lato:wght@300;400;700;900&family=Nunito:wght@500;600;700&display=swap');
 .container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 20px;
     height: 100vh;
+    font-family: 'Nunito';
 }
 
 .box {
@@ -19,4 +21,38 @@
     cursor: pointer;
     font-size: 24px;
 
+} */
+
+/* Updated by Lokesh Narasani */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Lato:wght@300;400;700;900&family=Nunito:wght@500;600;700&display=swap');
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    height: 100vh;
+    font-family: 'Nunito', sans-serif; /* Ensure the font is applied consistently */
+   
+}
+
+.box {
+    flex: 1;
+    background-color: #ffffff; /* White background for a clean, modern look */
+    border-radius: 15px; /* More pronounced rounded corners */
+    margin: 50px; /* Adjusted margin for better spacing */
+    height: 500px; /* Consistent height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 26px; /* Slightly larger font size for readability */
+    color: #333; /* Darker text for contrast */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for interaction */
+}
+
+.box:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increased shadow on hover for a "lifting" effect */
 }

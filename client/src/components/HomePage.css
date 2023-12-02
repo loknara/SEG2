@@ -1,11 +1,13 @@
 /* src/Currensee.css */
 /* Created by Lokesh Narasani */
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Lato:wght@300;400;700;900&family=Nunito:wght@500;600;700&display=swap');
 .currensee-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100vh;
     background-size: cover;
+    font-family: 'Nunito', sans-serif; 
   }
   
   .header {
@@ -48,4 +50,68 @@
   .buttons button:hover {
     background-color: #45a049;
   }
-  
+   */
+
+   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Lato:wght@300;400;700;900&family=Nunito:wght@500;600;700&display=swap');
+
+   .currensee-container {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       height: 100vh;
+       background-size: cover;
+       font-family: 'Nunito', sans-serif;
+       background-color: #f4f4f4; /* Light background for a clean look */
+       overflow: auto;
+   }
+   
+   .header {
+       background-color: #117730; /* Darker shade for contrast */
+       width: 100%;
+       padding: 15px 0;
+       text-align: center;
+   }
+   
+   .header h1 {
+       color: #ecf0f1; /* Lighter text for readability */
+       margin: 0;
+       font-size: 2em; /* Larger font size for emphasis */
+       font-family: 'Lato', sans-serif; /* Change font for a modern look */
+   }
+   
+   .welcome-section {
+       background-color: #f3f3f3; /* Back to original background color */
+       padding: 40px;
+       width: 80%;
+       margin-top: 50px;
+       text-align: center;
+       border-radius: 12px;
+       color: rgb(0, 0, 0); /* Light color text for contrast */
+       font-size: 1.5em; /* Enlarged text size */
+   }
+   
+   .buttons {
+       margin-top: 30px;
+       display: flex;
+       gap: 20px;
+       flex-wrap: wrap; /* Wrap buttons for responsiveness */
+       justify-content: center; /* Center buttons */
+   }
+   
+   .homeButton {
+       padding: 15px 30px;
+       background-color: rgb(24, 146, 83); /* Modern button color */
+       border: none;
+       border-radius: 20px; /* More rounded buttons */
+       cursor: pointer;
+       transition: background-color 0.3s ease, transform 0.2s;
+       color: white; /* Light text color */
+       font-size: 1em;
+       font-family: 'Inter', sans-serif; /* Use a different font for buttons */
+   }
+   
+   .buttons button:hover {
+       background-color: rgb(20, 185, 101); /* Darken button on hover */
+       transform: translateY(-2px); /* Slight lift effect */
+   }
+   

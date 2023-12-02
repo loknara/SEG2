@@ -1,39 +1,64 @@
 /* src/components/Navbar.css */
-/* Created by Lokesh Narasani */
+/* Enhanced by ChatGPT for a Modern and Bold Look */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Lato:wght@300;400;700;900&family=Nunito:wght@500;600;700&display=swap');
+
 nav {
-    background-color: #333;
-    padding: 1rem;
+    background-color: #117730; /* Darker, more sophisticated background */
+    padding: 0.8rem 2rem; /* Balanced padding */
     display: flex;
-    justify-content: left;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Soft box shadow for depth */
+    font-family: 'Nunito', sans-serif; /* Modern, clean font */
+    font-size: larger;
+    font-weight: bold;
+}
+
+nav a, nav .but {
+    color: #ffffff; /* Subtle text color */
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 30px; /* Rounded edges */
+    transition: all 0.3s ease; /* Smooth all transitions */
+    font-weight: 1000; /* Medium boldness */
+    font-size: large;
 }
 
 nav a {
-    color: #fff;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    border: 1px solid #fff;
-    border-radius: 4px;
-    margin-left: 15px;
+    background-color: transparent;
+    margin: 0 10px;
+    font-weight: 1000; /* Medium boldness */
 }
 
-nav a:hover {
-    background-color: #fff;
-    color: #333;
+nav a:hover, nav .but:hover {
+    background-color: #ffffff;
+    color: #117730;
+    transform: scale(1.05); /* Slight increase in size on hover */
+    cursor: pointer;
 }
 
 nav .but {
-    color: #fff;
-    background-color: #333;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    border: 1px solid #fff;
-    border-radius: 4px;
-    justify-self: flex-end;
-    margin-left: auto;
+    background-color: #e74c3c; /* Eye-catching sign-out button */
+    border: none;
+    margin-left: auto; /* Push to the right */
 }
 
-nav .but:hover {
-    background-color: #fff;
-    color: #333;
-    cursor: pointer;
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    nav a, nav .but {
+        margin-top: 0.5rem;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Additional visual feedback for focus states */
+nav a:focus, nav .but:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #ffffff; /* Highlight focus with a blue outline */
 }

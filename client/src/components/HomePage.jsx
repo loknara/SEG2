@@ -40,8 +40,8 @@ function HomePage() {
             <p>Currensee is an interactive currency tracker with live updates!</p>
           </div>
           <div className="buttons">
-            {!user && <button onClick={navigateToLogin}>Login/Signup</button>}
-            <button><Link to="https://www.oanda.com/currency-converter/en/?from=USD&to=EUR&amount=1">Quick Currency Convertor</Link></button>
+            {!user && <button className='homeButton' onClick={navigateToLogin}>Login/Signup</button>}
+            <button className='homeButton'><Link to="https://www.oanda.com/currency-converter/en/?from=USD&to=EUR&amount=1">Quick Currency Convertor</Link></button>
           </div>
         </div>
       );

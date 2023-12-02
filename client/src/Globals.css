@@ -1,9 +1,10 @@
 /* src/Global.css */
 body {
-    background-image: url('../public/background3.png');
+    /* background-image: url('../public/background3.png');
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed; */
     margin: 0;
     padding: 0;
+    overflow: auto;
 }

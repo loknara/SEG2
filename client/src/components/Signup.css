@@ -1,8 +1,19 @@
-.header{
-    width:100vw;
-    height:30px;
-    background-color: #43A756;
+.header {
+    background-color: #117730; /* Darker shade for contrast */
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
 }
+
+.header h1 {
+    color: #ecf0f1; /* Lighter text for readability */
+    margin: 0;
+    font-size: 2em; /* Larger font size for emphasis */
+    font-family: 'Lato', sans-serif; /* Change font for a modern look */
+}
+/* Add this to your Signup.css */
+
+
 
 .signupForm {
     max-width: 300px;

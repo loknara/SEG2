@@ -1,4 +1,4 @@
-.header{
+/* .header{
     width:100vw;
     height:30px;
     background-color: #43A756;
@@ -51,4 +51,92 @@ input[type="text"], input[type="password"] {
 .centerText{
     padding: 5px;
     text-align: center;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Lato:wght@300;400;700;900&family=Nunito:wght@500;600;700&display=swap');
+/* Add this to your Signup.css */
+
+input::placeholder {
+    /* Using rgba notation for color with transparency */
+    color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+    font-weight: normal; /* Ensuring the placeholder text is not bold */
+}
+
+.header {
+    background-color: #117730; /* Darker shade for contrast */
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.header h1 {
+    color: #ecf0f1; /* Lighter text for readability */
+    margin: 0;
+    font-size: 2em; /* Larger font size for emphasis */
+    font-family: 'Lato', sans-serif; /* Change font for a modern look */
+}
+
+.loginForm {
+    max-width: 300px;
+    margin: 5% auto;
+    padding: 30px; /* Increased padding for better spacing */
+    border: none; /* Removing border for a flat design */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1); /* Softening the shadow */
+    background-color: #fff;
+    font-family: 'Nunito', sans-serif; /* Consistent font */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; /* Darker color for contrast */
+    font-size: 1.8em; /* Larger font size */
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333; /* Darker color for readability */
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 2%; /* Adjusted spacing */
+    font-size: 1em; /* Adjusted font size */
+}
+
+.buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* Wrap buttons for responsiveness */
+    justify-content: center; /* Center buttons */
+}
+
+.loginButton {
+    padding: 15px 30px;
+    background-color: rgb(24, 146, 83); /* Modern button color */
+    border: none;
+    border-radius: 20px; /* More rounded buttons */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+    color: white; /* Light text color */
+    font-size: 1em;
+    font-family: 'Inter', sans-serif; /* Use a different font for buttons */
+}
+
+.buttons button:hover {
+    background-color: rgb(105, 198, 135); /* Darken button on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+.centerText {
+    padding: 5px;
+    text-align: center;
+    color: #333; /* Consistent text color */
 }

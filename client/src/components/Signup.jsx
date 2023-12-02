@@ -72,12 +72,12 @@ export default function Signup(){
     return(
         <div className='loginBody'>
             <div className='header'>
-                <div className='logo'> Logo goes here</div>
+                <h1 >CURRENSEE</h1>
             </div>
             <div className='signupForm'>
                 {error}
                 <label htmlFor="username">Email:</label>
-                <input type='text'placeholder='Username' name='userName' value={formData.userName} onChange={handleChange}></input>
+                <input className="tester" type='text'placeholder='Username' name='userName' value={formData.userName} onChange={handleChange}></input>
                 <label htmlFor="password">Password:</label>
                 <input type='password' placeholder='Password' name='password' value = {formData.password} onChange={handleChange}></input>
                 <label htmlFor="password">Retype Password:</label>

@@ -8,19 +8,7 @@
     height: 100vh;
 }
 
-.box {
-    flex: 1;
-    background-color: white;
-    border-radius: 2rem;
-    margin: 100px;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    font-size: 24px;
 
-}
 
 .currensee-container {
     display: flex;
@@ -31,7 +19,7 @@
   }
 
 .welcome-section {
-    background-color: #4CAF50;
+    background-color: #f3f3f3;
     padding: 20px;
     width: 80%;
     margin-top: 50px;

@@ -20,7 +20,7 @@ function FinancialNews() {
     }, []);
 
     return (
-        <div className="container">
+        <div className="containerFinance">
             <h1 className="header-title">Financial News</h1>
             {newsData.map((article, index) => (
                 <div key={index} className="news-item">

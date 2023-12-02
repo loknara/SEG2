@@ -1,5 +1,5 @@
 /* Created by Lokesh Narasani */
-.container {
+/* .container {
     flex-direction: column;
     padding: 40px;
     margin-left: 375px;
@@ -38,4 +38,82 @@
     text-decoration: none;
     display: inline-block;
     margin-top: 10px;
+} */
+
+/* Updated by Lokesh Narasani */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Lato:wght@300;400;700;900&family=Nunito:wght@500;600;700&display=swap');
+
+.containerFinance {
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: auto; /* Centering the container */
+    max-width: 800px; /* Maximum width for better readability */
+    font-family: 'Nunito', sans-serif; /* Modern font */
+
 }
+
+.header-title {
+    background-color: #117730; /* Modern color */
+    color: #ecf0f1; /* Lighter text color */
+    border-radius: 10px; /* Adjusted border-radius */
+    text-align: center;
+    height: auto; /* Auto height for flexibility */
+    padding: 30px;
+    margin-bottom: 30px; /* Increased margin */
+    font-size: 2em; /* Larger font size for emphasis */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.news-item {
+    background-color: #ffffff; /* White background for each item */
+    border-radius: 15px;
+    margin-bottom: 30px; /* Increased margin */
+    padding: 25px; /* Increased padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.news-item:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+}
+
+.news-item h3 {
+    margin-top: 0;
+    color: #333; /* Darker color for contrast */
+    font-size: 1.4em; /* Slightly larger font size */
+}
+
+.news-image {
+    width: 100%;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.news-item p {
+    color: #666; /* Subtle color for the text */
+    line-height: 1.6; /* Improved line height for readability */
+}
+
+.news-item a {
+    color: #3498db; /* Bright and modern link color */
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold; /* Bold for emphasis */
+}
+
+.news-item a:hover {
+    color: #2980b9; /* Darken on hover */
+    text-decoration: underline; /* Underline for indication */
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 20px; /* Reduced margin for smaller screens */
+        padding: 10px; /* Reduced padding */
+    }
+}
+
