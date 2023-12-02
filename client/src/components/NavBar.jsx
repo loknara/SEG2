@@ -39,6 +39,7 @@ function Navbar() {
       <Link to="/SavedCurrencyConversions">Saved Conversions</Link>
       <Link to="/CurrencyHistory">Currency History</Link>
       <Link to="/Contact">Contact Us</Link>
+      <Link to="/HeatMap">Heat Map</Link>
       {user && <button className="but" onClick={handleSignOut}>Sign Out</button>}
       {/* <Link to="/page2">Page 2</Link>
       <Link to="/page3">Page 3</Link>
