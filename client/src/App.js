@@ -10,6 +10,7 @@ import FinancialNews from './components/FinancialNews.jsx';
 import SavedCurrencyConversions from './components/SavedCurrencyConversions';
 import Login from './components/Login.jsx'
 import Signup from './components/Signup.jsx';
+import LiveTracker from './components/LiveTracker.jsx';
 
 // import Page3 from './components/Page3';
 import HeatMap from './components/HeatMap';
@@ -36,6 +37,7 @@ function App() {
         <Route path="/Login" element={<Login />} />
         <Route path="/Signup" element={<Signup />} />
         <Route path="/Contact" element={<Contact/>} /> //Created by Suraj N.
+        <Route path="/LiveTracker" element={<LiveTracker/>} />
        {/*  <Route path="/page3" component={Page3} />
         <Route path="/page4" component={Page4} /> */}
         <Route path="/HeatMap" element={<HeatMap/>} />
