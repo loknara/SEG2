@@ -40,13 +40,13 @@
     font-size: 1.5em;
   }
 
-  .buttons {
+  /* .buttons {
     margin-top: 20px;
     display: inline-flex;
     flex-direction: row;
     gap: 20px;
     padding-bottom: 20px;
-  }
+  } */
 
   .titles {
     background-color: #4CAF50;
@@ -58,3 +58,28 @@
     border-radius: 8px;
     
   }
+
+  .buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* Wrap buttons for responsiveness */
+    justify-content: center; /* Center buttons */
+}
+
+.savedButton {
+    padding: 15px 30px;
+    background-color: rgb(24, 146, 83); /* Modern button color */
+    border: none;
+    border-radius: 20px; /* More rounded buttons */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+    color: white; /* Light text color */
+    font-size: 1em;
+    font-family: 'Inter', sans-serif; /* Use a different font for buttons */
+}
+
+.buttons button:hover {
+    background-color: rgb(20, 185, 101); /* Darken button on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}

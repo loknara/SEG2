@@ -25,7 +25,7 @@ function Navbar() {
       <nav>
         <Link to="/">Home</Link>
         <Link to="/Profile">Profile</Link>
-        <Link to="/ResourcesPage">Resources Page</Link>
+        <Link to="/ResourcesPage/FinancialNews">Resources Page</Link>
         <Link to="/SavedCurrencyConversions">Saved Conversions</Link>
         <Link to="/CurrencyHistory">Currency History</Link>
         <Link to="/Contact">Contact Us</Link>

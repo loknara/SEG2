@@ -51,8 +51,8 @@ import './SavedCurrencyConversions.css';
             </a>
           
 
-            <div className="buttons">
-            <button onClick={navigateToSaved}>View More Saved</button>
+          <div className="buttons">
+            <button className="moreButton"onClick={navigateToSaved}>View More Saved</button>
           </div>
 
 
