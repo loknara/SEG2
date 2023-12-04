@@ -22,9 +22,9 @@ const ResourcesPage = () => {
       <div className="box" onClick={navigateToFinancialNews}>
           Financial News
       </div>
-      <div className="box" onClick={navigateToInsights}>
+      {/* <div className="box" onClick={navigateToInsights}>
           Insights
-      </div>
+      </div> */}
   </div>
     );
 };

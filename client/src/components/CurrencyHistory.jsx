@@ -19,12 +19,12 @@ import './CurrencyHistory.css';
           
           
             <div style={{ display: 'flex'}} className="buttons">
-            <button style={{ marginleft: "auto" }}><h4>Euro</h4></button>
-            <button style={{ marginleft: "auto" }}><h4>US</h4></button>
-            <button style={{ marginleft: "auto" }}><h4>Weekly</h4></button>
+            <button className='histButton' style={{ marginleft: "auto" }}><h4>Euro</h4></button>
+            <button className='histButton' style={{ marginleft: "auto" }}><h4>US</h4></button>
+            <button className='histButton' style={{ marginleft: "auto" }}><h4>Weekly</h4></button>
           </div>
 
-
+        
 
         </div>
        

@@ -58,21 +58,21 @@ import './ViewMoreSaved.css';
 
 
           <div className="buttons">
-            <button onClick={openUSDToEuro}><h4>USD To Euro</h4></button>
-            <button onClick={openUSDToGBP}><h4>USD To GBP</h4></button>
-            <button onClick={openEuroToGBP}><h4>Euro To GBP</h4></button>
-            <button onClick={openUSDToINR}><h4>USD To INR</h4></button>
-            <button onClick={openEuroToINR}><h4>Euro To INR</h4></button>
-            <button onClick={openUSDToJPY}><h4>USD To JPY</h4></button>
+            <button className='savedButton' onClick={openUSDToEuro}><h4>USD To Euro</h4></button>
+            <button className='savedButton' onClick={openUSDToGBP}><h4>USD To GBP</h4></button>
+            <button className='savedButton' onClick={openEuroToGBP}><h4>Euro To GBP</h4></button>
+            <button className='savedButton' onClick={openUSDToINR}><h4>USD To INR</h4></button>
+            <button className='savedButton' onClick={openEuroToINR}><h4>Euro To INR</h4></button>
+            <button className='savedButton' onClick={openUSDToJPY}><h4>USD To JPY</h4></button>
           </div>
 
           <div className="buttons">
-            <button onClick={openJPYToEuro}><h4>JPY To Euro</h4></button>
-            <button onClick={openJPYToGBP}><h4>JPY To GBP</h4></button>
-            <button onClick={openJPYToINR}><h4>JPY To INR</h4></button>
-            <button onClick={openINRToEuro}><h4>INR To Euro</h4></button>
-            <button onClick={openINRToJPY}><h4>INR To JPY</h4></button>
-            <button onClick={openEuroToCAD}><h4>Euro to CAD</h4></button>
+            <button className='savedButton' onClick={openJPYToEuro}><h4>JPY To Euro</h4></button>
+            <button className='savedButton' onClick={openJPYToGBP}><h4>JPY To GBP</h4></button>
+            <button className='savedButton' onClick={openJPYToINR}><h4>JPY To INR</h4></button>
+            <button className='savedButton' onClick={openINRToEuro}><h4>INR To Euro</h4></button>
+            <button className='savedButton' onClick={openINRToJPY}><h4>INR To JPY</h4></button>
+            <button className='savedButton' onClick={openEuroToCAD}><h4>Euro to CAD</h4></button>
           </div>
         
         </div>
