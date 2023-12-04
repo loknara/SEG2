@@ -1,16 +1,9 @@
 .graph {
 
   position: absolute;
-  top: 45%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 10px;
-  
-}
-
-h1 {
-    position: absolute;
-    top: 45%;
-    left: 50%;
 
 }

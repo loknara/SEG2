@@ -45,9 +45,19 @@ const data = [
     </div>
   );
 
-
   return (
-     renderLineChart
+    
+      <div className='graph'>
+        <LineChart width={1200} height={600} data={data} margin={{ top: 0, right: 0, bottom: 0, left: 0 }}>
+      <Line type="monotone" dataKey="gbp" stroke="#82ca9d" />
+      <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
+      <XAxis dataKey="name" />
+      <YAxis type="number" domain={['auto', 'auto']} />
+      <Tooltip />
+      <Legend />
+    </LineChart>
+      </div>
+
   );
 
 }
