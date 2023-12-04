@@ -30,7 +30,7 @@ function Navbar() {
         <Link to="/CurrencyHistory">Currency History</Link>
         <Link to="/Contact">Contact Us</Link>
         <Link to="/HeatMap">Heat Map</Link>
-        <Link to="/LiveTracker">Live Tracker</Link>
+        <Link to="/LiveTracker">Currency Timeline</Link>
         <button className="but" onClick={handleSignOut}>Sign Out</button>
       </nav>
     ) : null
